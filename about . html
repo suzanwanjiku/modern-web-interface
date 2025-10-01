@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Lens & Frame</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo"><a href="index.html">Lens & Frame</a></div>
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle" aria-label="Toggle navigation" id="nav-toggle">
+            <span class="hamburger"></span>
+        </button>
+    </header>
+
+    <main class="page-content">
+        <section class="about-hero">
+            <h1>Meet the Photographer</h1>
+            <p>My philosophy is simple: authentic moments make the best photographs.</p>
+        </section>
+
+        <section class="bio-content">
+            <img src="./images/placeholder-bio.jpg" alt="Photographer portrait" class="bio-image">
+            <div class="bio-text">
+                <h2>Behind the Lens</h2>
+                <p>Hi, I'm Alex, and I started Lens & Frame 10 years ago to turn fleeting moments into permanent memories. My background in photojournalism influences my style—candid, emotional, and real. I specialize in natural light and telling a complete story through a sequence of images.</p>
+                <p>Whether it's a bustling wedding or a quiet portrait session, my goal is always to deliver images that resonate deeply with you for years to come.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Lens & Frame Photography. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="services.html">Services</a> | 
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
