@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Lens & Frame</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo"><a href="index.html">Lens & Frame</a></div>
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle" aria-label="Toggle navigation" id="nav-toggle">
+            <span class="hamburger"></span>
+        </button>
+    </header>
+
+    <main class="page-content">
+        <section class="services-intro">
+            <h1>Photography Packages</h1>
+            <p>Tailored to capture your specific needs, from lifelong events to professional branding.</p>
+        </section>
+
+        <div class="package-grid">
+            <article class="package-card">
+                <h2>Weddings</h2>
+                <p>Full-day coverage, two photographers, and a private online gallery. Starting at $3,500.</p>
+                <a href="contact.html" class="button">Inquire Now</a>
+            </article>
+
+            <article class="package-card">
+                <h2>Portraits & Family</h2>
+                <p>1-2 hour session, high-resolution edits, and outfit changes. Starting at $450.</p>
+                <a href="contact.html" class="button">Book a Session</a>
+            </article>
+
+            <article class="package-card">
+                <h2>Commercial & Branding</h2>
+                <p>Half-day rates, usage rights included, and consultation for creative direction. Contact for custom quote.</p>
+                <a href="contact.html" class="button">Get a Quote</a>
+            </article>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Lens & Frame Photography. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="services.html">Services</a> | 
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
