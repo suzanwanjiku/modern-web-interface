@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Lens & Frame</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo"><a href="index.html">Lens & Frame</a></div>
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle" aria-label="Toggle navigation" id="nav-toggle">
+            <span class="hamburger"></span>
+        </button>
+    </header>
+
+    <main class="page-content">
+        <section class="gallery-intro">
+            <h1>Our Best Work</h1>
+            <p>Click any image below to view it larger (Interactive JS element).</p>
+        </section>
+
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="./images/gallery-1.jpg" alt="Rustic Wedding" title="Click to view full size"></div>
+            <div class="gallery-item"><img src="./images/gallery-2.jpg" alt="Urban Portrait" title="Click to view full size"></div>
+            <div class="gallery-item"><img src="./images/gallery-3.jpg" alt="Nature Landscape" title="Click to view full size"></div>
+            <div class="gallery-item"><img src="./images/gallery-4.jpg" alt="Food Photography" title="Click to view full size"></div>
+            <div class="gallery-item"><img src="./images/gallery-5.jpg" alt="Maternity Shoot" title="Click to view full size"></div>
+            <div class="gallery-item"><img src="./images/gallery-6.jpg" alt="Commercial Product" title="Click to view full size"></div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Lens & Frame Photography. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="services.html">Services</a> | 
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
