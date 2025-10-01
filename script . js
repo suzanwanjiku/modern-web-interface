@@ -1,0 +1,71 @@
+/**
+ * LENS & FRAME PORTFOLIO - JAVASCRIPT
+ * Interactivity:
+ * 1. Mobile Navigation Toggle (Hamburger Menu)
+ * 2. Basic Form Validation (for contact.html)
+ * 3. Gallery Interaction (click console log for a modal)
+ */
+
+document.addEventListener('DOMContentLoaded', () => {
+    // ------------------------------------------
+    // 1. Mobile Navigation Toggle
+    // ------------------------------------------
+    const navToggle = document.getElementById('nav-toggle');
+    const mainNav = document.getElementById('main-nav');
+
+    if (navToggle && mainNav) {
+        navToggle.addEventListener('click', () => {
+            // Toggles the 'open' class to show/hide the menu (styled in CSS)
+            mainNav.classList.toggle('open');
+            
+            // Accessibility feature: update aria-expanded attribute
+            const isExpanded = mainNav.classList.contains('open');
+            navToggle.setAttribute('aria-expanded', isExpanded);
+        });
+        
+        // Close menu when a link is clicked (UX improvement for mobile)
+        mainNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) { 
+                    mainNav.classList.remove('open');
+                    navToggle.setAttribute('aria-expanded', false);
+                }
+            });
+        });
+    }
+
+    // ------------------------------------------
+    // 2. Simple Gallery/Image Modal Simulation
+    // ------------------------------------------
+    const galleryItems = document.querySelectorAll('.gallery-item img');
+
+    galleryItems.forEach(img => {
+        img.addEventListener('click', () => {
+            // Log to console to show that the click interaction is working
+            console.log(`Gallery Image Clicked: ${img.alt}. In a production site, this would open a full-screen image modal.`);
+            alert(`Viewing: ${img.alt}. (Check the console for the JS trigger.)`);
+        });
+    });
+
+    // ------------------------------------------
+    // 3. Simple Form Validation (on contact.html)
+    // ------------------------------------------
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (event) => {
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            if (name === '' || email === '' || message === '') {
+                event.preventDefault(); // Stop form submission if fields are empty
+                alert('ERROR: Please fill out all Name, Email, and Message fields before submitting.');
+                // Add better inline error handling here in a full production environment
+            } else {
+                // If using Netlify/Vercel forms, they handle the backend submission.
+                // For a static site, this alert confirms the JS validation passed.
+                alert('Success! Form validated and ready for submission.');
+            }
+        });
+    }
+});
